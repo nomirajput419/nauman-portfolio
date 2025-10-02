@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nauman — Data Science & Python Portfolio</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+  *{box-sizing:border-box;margin:0;padding:0;font-family:'Poppins',sans-serif}
+  body{background:#f8fafc;color:#222;line-height:1.5}
+  header{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 3rem;background:#fff;box-shadow:0 6px 18px rgba(35,35,35,0.05);
+  position:sticky;top:0;z-index:20}
+  .logo{font-weight:700;font-size:1.25rem}
+  nav ul{display:flex;gap:1rem;list-style:none}
+  nav a{text-decoration:none;color:#333;padding:0.4rem 0.6rem;border-radius:8px}
+  nav a:hover{background:#eef2f7}
+  .hero{display:flex;gap:3rem;padding:4rem 3rem;align-items:center}
+  .hero .photo{width:260px;height:260px;border-radius:18px;background:linear-gradient(135deg,#e6eefc,#f7f9fc);display:flex;align-items:center;justify-content:center;font-size:3.5rem;color:#3b82f6}
+  .hero .intro{max-width:720px}
+  .hero h1{font-size:2.25rem;margin-bottom:.5rem}
+  .tag{color:#6b7280;font-weight:600;margin-bottom:1rem}
+  .buttons{display:flex;gap:1rem;margin-top:1rem}
+  .btn{padding:.7rem 1.1rem;border-radius:10px;border:1px solid #d1d5db;background:#fff;text-decoration:none;color:#111;font-weight:600}
+  .btn.primary{background:#111;color:#fff;border:0}
+  section{padding:3rem;background:transparent}
+  .card{background:#fff;padding:1.5rem;border-radius:14px;box-shadow:0 8px 30px rgba(16,24,40,0.04);margin-bottom:1rem}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}
+  .skills{display:flex;flex-wrap:wrap;gap:.6rem}
+  .skill{background:#eef2f7;padding:.45rem .7rem;border-radius:999px;font-weight:600}
+  .projects-list{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+  .project{padding:1rem;border-radius:12px;border:1px solid #e6e8eb;background:#fff}
+  footer{padding:2rem;text-align:center;color:#6b7280}
+  @media (max-width:900px){.grid{grid-template-columns:1fr}.projects-list{grid-template-columns:1fr}.hero{flex-direction:column;align-items:flex-start}.hero .photo{width:180px;height:180px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Muhammad Nauman</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="photo">N</div>
+      <div class="intro">
+        <h1>Hi, I'm Muhammad Nauman</h1>
+        <div class="tag">Aspiring Data Scientist & Python Engineer — focused on practical ML, clean code, and reproducible projects.</div>
+        <p>I build data-driven solutions using Python (NumPy, pandas, scikit-learn) and deploy models with clear documentation. I love teaching myself deeper concepts (especially OOP) and writing clean, production-ready code.</p>
+        <div class="buttons">
+          <a class="btn primary" href="#projects">See Projects</a>
+          <a class="btn" href="#contact">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="card">
+      <h2>About me</h2>
+      <div class="grid" style="margin-top:1rem">
+        <div>
+          <p><strong>Name:</strong> Muhammad Nauman</p>
+          <p><strong>Location:</strong> Faisalabad, Pakistan</p>
+          <p><strong>Education / Certificate:</strong> Data Science & Analysis — Cybex School of IT, Faisalabad</p>
+          <p><strong>Focus:</strong> Data cleaning, exploratory data analysis, machine learning models (Logistic Regression, Random Forest, XGBoost), model evaluation and deployment.</p>
+        </div>
+        <div>
+          <p><strong>Work style:</strong> Practical, step-by-step explanations, reproducible notebooks, and readable code. I explain OOP and ML concepts in Urdu when needed.</p>
+          <p><strong>Career goal:</strong> Become a production-ready Python/Data engineer — write libraries, build pipelines, and deploy robust ML services.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="card">
+        <h2>Skills</h2>
+        <div class="skills" style="margin-top:1rem">
+          <div class="skill">Python</div>
+          <div class="skill">NumPy</div>
+          <div class="skill">pandas</div>
+          <div class="skill">matplotlib</div>
+          <div class="skill">scikit-learn</div>
+          <div class="skill">XGBoost</div>
+          <div class="skill">Data Cleaning</div>
+          <div class="skill">EDA</div>
+          <div class="skill">Model Deployment (basics)</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Experience highlights</h3>
+        <ul style="margin-top:1rem">
+          <li>Built house price prediction models (data cleaning, feature engineering, regression metrics).</li>
+          <li>Worked on credit/loan prediction pipelines (logistic regression, RF, XGBoost).</li>
+          <li>Regularly write step-by-step explanations and fixes for common pandas/sklearn issues.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 style="margin:1rem 0">Projects</h2>
+      <div class="projects-list">
+        <div class="project">
+          <h4>House_Prediction_Project</h4>
+          <p>End-to-end regression pipeline: EDA, preprocessing, model building, evaluation (MAE, MSE, RMSE, R²). Includes data cleaning steps and notebook.</p>
+          <p><strong>Tech:</strong> pandas, scikit-learn, matplotlib, numpy</p>
+          <p><a href="#">GitHub / Notebook (link placeholder)</a></p>
+        </div>
+
+        <div class="project">
+          <h4>Credit Card Default Prediction</h4>
+          <p>Classification pipeline using Logistic Regression, Random Forest and XGBoost, with feature categories: demographics, financial, behavioral.</p>
+          <p><strong>Tech:</strong> pandas, scikit-learn, xgboost</p>
+          <p><a href="#">GitHub / Notebook (link placeholder)</a></p>
+        </div>
+
+        <div class="project">
+          <div style="font-weight:600">Other Notebooks & Fixes</div>
+          <p>Helper scripts: pandas chained-assignment fixes, handling KeyError issues, imputations using mode/median, reproducible preprocessing pipelines.</p>
+        </div>
+
+        <div class="project">
+          <div style="font-weight:600">Teaching & Documentation</div>
+          <p>Step-by-step Urdu explanations of OOP, numpy, and pandas functions for beginners — useful for walkthroughs and shared learning material.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="card">
+        <h2>Contact</h2>
+        <p style="margin-top:1rem">Mujhe aap niche links pe connect kar sakte hain:</p>
+        <p style="margin-top:.75rem"><strong>GitHub:</strong> <a href="https://github.com/nomirajput419" target="_blank">github.com/nomirajput419</a></p>
+        <p style="margin-top:.5rem"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nauman-rajput-45037637a/" target="_blank">linkedin.com/in/nauman-rajput-45037637a</a></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>Made by Muhammad Nauman — Portfolio generated with help from ChatGPT.</div>
+  </footer>
+</body>
+</html>
